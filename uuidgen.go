@@ -120,8 +120,3 @@ func (sf *SnowFlake) waitNextMilli(ts uint64) uint64 {
 func timestamp() uint64 {
 	return uint64(time.Now().UnixNano()/int64(1000000) - epoch)
 }
-
-//NetIP 获取指定网卡的IP地址
-func eth0IP(name string) uint16 {
-
-}
